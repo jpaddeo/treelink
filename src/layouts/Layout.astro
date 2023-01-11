@@ -12,12 +12,34 @@ const { title, description = 'Treelink de Juan Pablo Addeo' } = Astro.props;
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <!-- <link rel='icon' type='image/svg+xml' href='/favicon.svg' /> -->
+    <link rel='icon' type='image/icon' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
     <meta name='description' content={description} />
     <title>{title}</title>
   </head>
-  <body class='bg-gradient-to-br from-slate-500 to-slate-900'>
+  <body
+    class='bg-gradient-to-br from-slate-500 via-slate-700 to-slate-800 bg-animate'
+  >
     <slot />
   </body>
 </html>
+
+<style>
+  .bg-animate {
+    background-size: 400%;
+    -webkit-animation: movingBg 6s ease infinite;
+    -moz-animation: movingBg 6s ease infinite;
+    animation: movingBg 6s ease infinite;
+  }
+
+  @keyframes movingBg {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+</style>
