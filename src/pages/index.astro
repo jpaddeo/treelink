@@ -1,0 +1,18 @@
+---
+import * as data from '@data/index.json';
+
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/Hero.astro';
+import Links from '@components/Links.astro';
+import Socials from '@components/Socials.astro';
+---
+
+<Layout title={data.name}>
+  <main
+    class='flex items-center flex-col justify-center h-screen m-auto p-6 max-w-5xl'
+  >
+    <Hero />
+    <Links />
+    <Socials />
+  </main>
+</Layout>

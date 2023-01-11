@@ -1,0 +1,13 @@
+---
+import * as data from '@data/index.json';
+
+import SocialCard from '@components/SocialCard.astro';
+---
+
+<ul class="w-full h-10 flex items-center justify-center mt-10 gap-x-4">
+  {
+    data.socials.map(({ icon, url, name }) => (
+      <SocialCard icon={icon} url={url} name={name} />
+    ))
+  }
+</ul>

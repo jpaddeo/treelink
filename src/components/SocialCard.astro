@@ -1,0 +1,27 @@
+---
+export interface Props {
+  icon: string;
+  url: string;
+  name: string;
+}
+
+const { icon } = Astro.props;
+
+import GitHub from '@components/icons/GitHub.astro';
+import Linkedin from '@components/icons/Linkedin.astro';
+import Twitter from '@components/icons/Twitter.astro';
+import TikTok from '@components/icons/TikTok.astro';
+---
+
+<li
+  class='list-none shadow-lg hover:scale-105 transition-all text-white h-10 w-10 hover:text-slate-400'
+>
+  {icon === 'twitter' && <Twitter />}
+  {icon === 'github' && <GitHub />}
+  {icon === 'linkedin' && <Linkedin />}
+  {
+    icon === 'tiktok' && (
+      <TikTok className='h-10 w-10 text-white transition-all hover:scale-110' />
+    )
+  }
+</li>

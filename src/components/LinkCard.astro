@@ -1,0 +1,23 @@
+---
+export interface Props {
+  thumbnail: string;
+  title: string;
+  href: string;
+}
+
+const { href, title, thumbnail } = Astro.props;
+---
+
+<li
+  class='list-none flex p-4 bg-white rounded-lg shadow-lg w-full hover:scale-105 transition-all'
+>
+  <a href={href} class='text-slate-900 bg-white opacity-80 w-full'>
+    <h2
+      class='flex items-center justify-between m-0 text-xl transition-all hover:text-slate-500 ml-2'
+    >
+      {thumbnail && <img src={thumbnail} alt={title} class='h-16 w-16' />}
+      {title}
+      <span>&rarr;</span>
+    </h2>
+  </a>
+</li>

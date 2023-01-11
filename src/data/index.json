@@ -1,0 +1,34 @@
+{
+  "name": "Juan Pablo Addeo",
+  "avatar": "/images/avatar.webp",
+  "nickname": "@jpaddeo",
+  "links": [
+    {
+      "thumbnail": "",
+      "title": "My Profile",
+      "url": "https://jpaddeo.work"
+    },
+    {
+      "thumbnail": "",
+      "title": "Curriculum",
+      "url": "https://jpaddeo.github.io"
+    }
+  ],
+  "socials": [
+    {
+      "icon": "twitter",
+      "url": "https://twitter.com/jpaddeo",
+      "name": "Twitter"
+    },
+    {
+      "icon": "linkedin",
+      "url": "https://linkedin.com/juanpabloaddeo",
+      "name": "Linkedin"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/jpaddeo",
+      "name": "GitHub"
+    }
+  ]
+}
