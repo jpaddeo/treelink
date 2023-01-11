@@ -1,13 +1,35 @@
 ---
 import * as data from '@data/index.json';
+import 'atropos/css';
 ---
 
-<div class='flex flex-col items-center justify-center gap-y-2 text-white mb-14'>
-  <img
-    class='h-32 w-32 rounded-full border-4 border-slate-800 dark:border-slate-200'
-    src={data.avatar}
-    alt={data.name}
-  />
-  <h1 class='text-3xl font-bold'>{data.name}</h1>
-  <h2 class='text-xl font-semibold'>{data.nickname}</h2>
+<div class='atropos my-atropos mb-14'>
+  <!-- scale container (required) -->
+  <div class='atropos-scale'>
+    <!-- rotate container (required) -->
+    <div class='atropos-rotate'>
+      <!-- inner container (required) -->
+      <div class='atropos-inner'>
+        <div
+          class='flex flex-col items-center justify-center gap-y-2 text-white'
+        >
+          <img
+            class='h-32 w-32 rounded-full border-4 border-slate-800 dark:border-slate-200'
+            src={data.avatar}
+            alt={data.name}
+          />
+          <h1 class='text-3xl font-bold'>{data.name}</h1>
+          <h2 class='text-xl font-semibold'>{data.nickname}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script src='node_modules/atropos/atropos.min.js'></script>
+<script type='module'>
+  Atropos({
+    el: '.my-atropos',
+    shadow: false,
+  });
+</script>
