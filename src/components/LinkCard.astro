@@ -11,7 +11,12 @@ const { href, title, thumbnail } = Astro.props;
 <li
   class='list-none flex p-4 bg-white rounded-lg shadow-lg w-full hover:scale-105 transition-all'
 >
-  <a href={href} class='text-slate-900 bg-white opacity-80 w-full'>
+  <a
+    href={href}
+    class='text-slate-900 bg-white opacity-80 w-full'
+    target='_blank'
+    rel='noreferrer noopener'
+  >
     <h2
       class='flex items-center justify-between m-0 text-xl transition-all hover:text-slate-500 ml-2'
     >
