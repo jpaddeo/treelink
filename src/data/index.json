@@ -5,13 +5,28 @@
   "links": [
     {
       "thumbnail": "",
-      "title": "My Profile",
+      "title": "Portfolio",
       "url": "https://jpaddeo.work"
+    },
+    {
+      "thumbnail": "",
+      "title": "Blog",
+      "url": "https://blog.jpaddeo.work"
     },
     {
       "thumbnail": "",
       "title": "Curriculum",
       "url": "https://jpaddeo.github.io"
+    },
+    {
+      "thumbnail": "",
+      "title": "Twitch",
+      "url": "https://twitch.tv/jpaddeo"
+    },
+    {
+      "thumbnail": "",
+      "title": "Cafecito",
+      "url": "https://cafecito.app/jpaddeo"
     }
   ],
   "socials": [
