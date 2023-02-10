@@ -11,19 +11,17 @@ import GitHub from '@components/icons/GitHub.astro';
 import Linkedin from '@components/icons/Linkedin.astro';
 import Twitter from '@components/icons/Twitter.astro';
 import TikTok from '@components/icons/TikTok.astro';
+import Email from '@components/icons/Email.astro';
 ---
 
 <li
-  class='list-none shadow-lg transition-all text-white h-12 w-12 hover:text-slate-200 hover:dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 rounded-full p-2 hover:cursor-pointer'
+  class='list-none shadow-lg transition-all text-white h-12 w-12 hover:text-slate-900 hover:bg-slate-200 rounded-full p-2 hover:cursor-pointer'
 >
   <a href={url} target='_blank' rel='noreferrer noopener'>
     {icon === 'github' && <GitHub />}
     {icon === 'linkedin' && <Linkedin />}
     {icon === 'twitter' && <Twitter />}
-    {
-      icon === 'tiktok' && (
-        <TikTok className='h-10 w-10 text-white transition-all hover:scale-110' />
-      )
-    }
+    {icon === 'tiktok' && <TikTok />}
+    {icon === 'email' && <Email />}
   </a>
 </li>
