@@ -6,35 +6,35 @@
     {
       "thumbnail": "",
       "title": "Portfolio",
-      "url": "https://jpaddeo.work"
-    },
-    {
-      "thumbnail": "",
-      "title": "Blog",
-      "url": "https://blog.jpaddeo.work"
+      "url": "https://jpaddeo.work",
+      "online": true
     },
     {
       "thumbnail": "",
       "title": "Curriculum",
-      "url": "https://jpaddeo.github.io"
+      "url": "https://jpaddeo.github.io",
+      "online": true
+    },
+    {
+      "thumbnail": "",
+      "title": "Blog",
+      "url": "https://blog.jpaddeo.work",
+      "online": false
     },
     {
       "thumbnail": "",
       "title": "Twitch",
-      "url": "https://twitch.tv/jpaddeo"
+      "url": "https://twitch.tv/jpaddeo",
+      "online": true
     },
     {
       "thumbnail": "",
       "title": "Cafecito",
-      "url": "https://cafecito.app/jpaddeo"
+      "url": "https://cafecito.app/jpaddeo",
+      "online": false
     }
   ],
   "socials": [
-    {
-      "icon": "twitter",
-      "url": "https://twitter.com/jpaddeo",
-      "name": "Twitter"
-    },
     {
       "icon": "linkedin",
       "url": "https://linkedin.com/juanpabloaddeo",
@@ -44,6 +44,16 @@
       "icon": "github",
       "url": "https://github.com/jpaddeo",
       "name": "GitHub"
+    },
+    {
+      "icon": "twitter",
+      "url": "https://twitter.com/jpaddeo",
+      "name": "Twitter"
+    },
+    {
+      "icon": "email",
+      "url": "mailto:jpaddeo@gmail.com",
+      "name": "Email"
     }
   ]
 }

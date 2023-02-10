@@ -3,28 +3,29 @@ export interface Props {
   thumbnail: string;
   title: string;
   href: string;
+  online: boolean;
 }
 
-const { href, title, thumbnail } = Astro.props;
+const { href, title, thumbnail, online } = Astro.props;
 ---
 
 <li class='list-none flex w-full'>
   <a
-    class='relative block group w-full'
-    href={href}
-    target='_blank'
+    class={`relative block group w-full ${!online && 'cursor-not-allowed'}`}
+    href={online ? href : '#'}
+    target={`${online ? '_blank' : '_self'}`}
     rel='noreferrer noopener'
   >
     <span
       class='absolute inset-0 border-2 border-white border-dashed rounded-lg'
       aria-hidden='true'></span>
     <div
-      class='text-lg font-medium text-gray-700 dark:text-gray-200 transition bg-white border-2 border-white rounded-lg group-hover:-translate-x-2 group-hover:-translate-y-2 dark:bg-gray-800 p-4 flex items-center justify-between'
+      class='text-lg font-medium text-gray-200 transition border-2 border-white rounded-lg group-hover:-translate-x-2 group-hover:-translate-y-2 bg-gray-800 p-4 flex items-center justify-between'
     >
       <p>
         {title}
       </p>
-      <span>&rbarr;</span>
+      {online && <span>&rbarr;</span>}
     </div>
   </a>
 </li>

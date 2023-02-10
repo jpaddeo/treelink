@@ -3,10 +3,18 @@ import * as data from '@data/index.json';
 import LinkCard from '@components/LinkCard.astro';
 ---
 
-<ul role='list' class='flex flex-col items-center justify-center gap-4 w-full mx-auto'>
+<ul
+  role='list'
+  class='flex flex-col items-center justify-center gap-4 w-full mx-auto'
+>
   {
-    data.links.map(({ url, title, thumbnail }) => (
-      <LinkCard href={url} title={title} thumbnail={thumbnail} />
+    data.links.map(({ url, title, thumbnail, online }) => (
+      <LinkCard
+        href={url}
+        title={title}
+        thumbnail={thumbnail}
+        online={online}
+      />
     ))
   }
 </ul>
