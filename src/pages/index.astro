@@ -5,20 +5,14 @@ import Layout from '@layouts/Layout.astro';
 import Hero from '@components/Hero.astro';
 import Links from '@components/Links.astro';
 import Socials from '@components/Socials.astro';
+import Footer from '@components/Footer.astro';
 ---
 
 <Layout title={data.name}>
-  <main
-    class='flex items-center flex-col justify-center w-full mt-12'
-  >
+  <main class='flex items-center flex-col justify-center w-full mt-12'>
     <Hero />
     <Links />
     <Socials />
-    <footer class='flex items-center justify-center text-white mt-10'>
-      made with <span class='text-red-500 px-2 text-2xl'>&hearts;</span> by <a
-        href='https://github.com/jpaddeo'
-        class='px-2'>@jpaddeo</a
-      >
-    </footer>
+    <Footer />
   </main>
 </Layout>
