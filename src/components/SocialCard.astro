@@ -17,7 +17,7 @@ import Email from '@components/icons/Email.astro';
 <li
   class='list-none shadow-lg transition-all text-white h-12 w-12 hover:text-slate-900 hover:bg-slate-200 rounded-full p-2 hover:cursor-pointer'
 >
-  <a href={url} target='_blank' rel='noreferrer noopener'>
+  <a href={url} target='_blank' rel='noreferrer noopener' aria-label={`Link a red social ${icon}`}>
     {icon === 'github' && <GitHub />}
     {icon === 'linkedin' && <Linkedin />}
     {icon === 'twitter' && <Twitter />}
