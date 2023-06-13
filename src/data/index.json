@@ -1,6 +1,6 @@
 {
   "name": "Juan Pablo Addeo",
-  "avatar": "/images/avatar.webp",
+  "avatar": "/images/avatar_new.webp",
   "nickname": "@jpaddeo",
   "links": [
     {
@@ -17,15 +17,15 @@
     },
     {
       "thumbnail": "",
-      "title": "Blog",
-      "url": "https://blog.jpaddeo.work",
-      "online": false
-    },
-    {
-      "thumbnail": "",
       "title": "Twitch",
       "url": "https://twitch.tv/jpaddeo",
       "online": true
+    },
+    {
+      "thumbnail": "",
+      "title": "Blog",
+      "url": "https://blog.jpaddeo.work",
+      "online": false
     },
     {
       "thumbnail": "",
